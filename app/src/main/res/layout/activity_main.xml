@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Test TextView for TalkBack verification -->
+    <TextView
+        android:id="@+id/talkback_test_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/talkback_test"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <GridLayout
+        android:id="@+id/flags_grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:useDefaultMargins="true"
+        app:layout_constraintTop_toBottomOf="@id/talkback_test_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Vietnam Flag -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/vietnam_flag"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:src="@drawable/vietnam_flag"
+                android:scaleType="fitCenter"
+                android:background="@drawable/flag_border"
+                android:contentDescription="@string/flag_vietnam_description"
+                android:focusable="true"
+                android:clickable="true"
+                android:importantForAccessibility="yes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_vietnam"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:contentDescription="@string/country_vietnam" />
+        </LinearLayout>
+
+        <!-- Korea Flag -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/korea_flag"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:src="@drawable/korea_flag"
+                android:scaleType="fitCenter"
+                android:background="@drawable/flag_border"
+                android:contentDescription="@string/flag_korea_description"
+                android:focusable="true"
+                android:clickable="true"
+                android:importantForAccessibility="yes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_korea"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:contentDescription="@string/country_korea" />
+        </LinearLayout>
+
+        <!-- Japan Flag -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/japan_flag"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:src="@drawable/japan_flag"
+                android:scaleType="fitCenter"
+                android:background="@drawable/flag_border"
+                android:contentDescription="@string/flag_japan_description"
+                android:focusable="true"
+                android:clickable="true"
+                android:importantForAccessibility="yes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_japan"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:contentDescription="@string/country_japan" />
+        </LinearLayout>
+
+        <!-- France Flag -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/france_flag"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:src="@drawable/france_flag"
+                android:scaleType="fitCenter"
+                android:background="@drawable/flag_border"
+                android:contentDescription="@string/flag_france_description"
+                android:focusable="true"
+                android:clickable="true"
+                android:importantForAccessibility="yes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country_france"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:contentDescription="@string/country_france" />
+        </LinearLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

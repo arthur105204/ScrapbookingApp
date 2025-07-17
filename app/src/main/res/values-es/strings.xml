@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App title -->
+    <string name="app_name">Álbum de Banderas del Mundo</string>
+    
+    <!-- Main title -->
+    <string name="app_title">Álbum de Banderas del Mundo</string>
+    
+    <!-- Country names -->
+    <string name="country_vietnam">Vietnam</string>
+    <string name="country_korea">Corea del Sur</string>
+    <string name="country_japan">Japón</string>
+    <string name="country_france">Francia</string>
+    
+    <!-- Accessibility content descriptions for flags -->
+    <string name="flag_vietnam_description">Bandera de Vietnam, fondo rojo con estrella amarilla</string>
+    <string name="flag_korea_description">Bandera de Corea del Sur, fondo blanco con símbolo yin-yang rojo y azul</string>
+    <string name="flag_japan_description">Bandera de Japón, fondo blanco con círculo rojo</string>
+    <string name="flag_france_description">Bandera de Francia, franjas verticales azul, blanco y rojo</string>
+    
+    <!-- Accessibility hints -->
+    <string name="flag_touch_hint">Toca para escuchar la descripción de la bandera</string>
+</resources> 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App title -->
+    <string name="app_name">세계 국기 스크랩북</string>
+    
+    <!-- Main title -->
+    <string name="app_title">세계 국기 스크랩북</string>
+    
+    <!-- Country names -->
+    <string name="country_vietnam">베트남</string>
+    <string name="country_korea">대한민국</string>
+    <string name="country_japan">일본</string>
+    <string name="country_france">프랑스</string>
+    
+    <!-- Accessibility content descriptions for flags -->
+    <string name="flag_vietnam_description">베트남 국기, 빨간 배경에 노란 별</string>
+    <string name="flag_korea_description">대한민국 국기, 흰 배경에 빨간색과 파란색 태극 문양</string>
+    <string name="flag_japan_description">일본 국기, 흰 배경에 빨간 원</string>
+    <string name="flag_france_description">프랑스 국기, 파란색, 흰색, 빨간색 세로 줄무늬</string>
+    
+    <!-- Accessibility hints -->
+    <string name="flag_touch_hint">국기 설명을 들으려면 터치하세요</string>
+</resources> 
